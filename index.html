@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Card</title>
+</head>
+<body>
+    <div class="cont">
+        <main class="main">
+        
+            <div id="backCard">
+                <div class="cvcCar">000</div>
+            </div>
+            <div id="frontCard">
+                <div id="selo">
+                    <div id="cBig"></div>
+                    <div id="cMin"></div>
+                </div>
+                <div id="cantainer">
+                    <div id="numberCard">0000 0000 0000 0000</div>
+                    <div id="nameCard">Jane Appleseed</div>
+                    <div id="dateCard">00/00</div>
+                </div>
+            </div>
+        </main>
+        <section id="sect">
+            <form id="form">
+                <div class="divs">
+                    <label for="nome">Nome do cartão</label>
+                    <input type="text" name="nome" id="nameCard2" placeholder="ex: Jane Appleseed">
+                </div>
+                
+                <div class="divs">
+                    <label for="numero">Número do cartão</label>
+                    <input type="text" name="numero" id="numCard" placeholder="ex: 1234 5678 9123 0000">
+                </div>
+        
+                <div class="divs">
+                    <label for="datecard" id="mes">Exp. Date (MM/YY)</label>
+                    <label for="cvccard" id="cvc">cvc</label>
+                    <input type="text" name="datecard" id="mesCard" placeholder="MM">
+                    <input type="text" name="datecard" id="anoCard" placeholder="YY">
+                    <input type="text" name="cvccard" id="cvcCard" placeholder="ex: 123">
+                </div>
+        
+                <button id="btn">Confirmar</button>
+            </form>
+    
+            <!-- <div id="completo">
+                <img src="images/icon-complete.svg" alt="">
+                <h1>OBRIGADO!</h1>
+                <p>Adicionamos os detalhes do seu cartão</p>
+
+                <button>Continuar</button>
+            </div> -->
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@media screen and (min-width: 992px) and (max-width: 1440px){
+
+    .cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    main {
+        background: url('../images/bg-main-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 400px;
+        height: 100vh;
+    }
+    #backCard {
+        top: 315px;
+        left: 260px;
+    }
+
+    #frontCard {
+        left: 188px;
+    }
+    form {
+        height: 100%;
+        width: 370px;
+        margin-right: 330px;
+    }
+    div#completo {
+        margin-right: 330px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    form label#cvc {
+        padding-right: 160px;
+     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #backCard {
+        top: 70px;
+        left: 320px;
+    }
+    #frontCard {
+        top: 160px;
+        left: 150px;
+    }
+    form {
+        width: 480px;
+        margin-top: 130px;
+    }
+    form label#cvc {
+        padding-right: 240px;
+    }
+    form input[type="text"]#anoCard, input[type="text"]#mesCard {
+        width: 15%;
+        
+    }
+    form input[type="text"]#cvcCard {
+        width: 59%;
+    }
+}
