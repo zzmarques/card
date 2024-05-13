@@ -129,7 +129,7 @@ function valiTd(){
 function validacao(input) {
     const spn = document.querySelector('span')
     const msg = document.createElement('span');
-    const text = document.createTextNode('campo vazio');
+    const text = document.createTextNode('Preencha o campo vazio');
     if(spn){
         return
     }
