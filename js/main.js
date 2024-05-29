@@ -59,6 +59,7 @@ inputAno.addEventListener('input', () => {
 });
 
 inputCvc.addEventListener('input', () => {
+
     if(inputCvc.value.length >= 3) {
         inputCvc.value = inputCvc.value.slice(0, 3)
     }else if( isNaN(Number(inputCvc.value)) ) {
@@ -155,6 +156,12 @@ function addSpace() {
 function addData() {
     const mes = Number(inputMes.value);
     const ano = Number(inputAno.value);
+    const spn = document.querySelector('span')
+
+    if(spn){
+        return
+    }
+
     if(!isNaN(mes) && !isNaN(ano) && mes !== '' && ano !== ''){
         const formattedData = `${mes}/${ano}`
         dateCard.innerHTML = formattedData
